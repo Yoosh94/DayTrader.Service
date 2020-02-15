@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ayush\\Desktop\\Projects\\BTCMarket\\BtcMarket\\BtcMarket\\BtcMarket.csproj": {}
+    "C:\\Users\\ayush\\Desktop\\Projects\\DayTrader\\DayTrader.Service\\BtcMarket\\BtcMarket.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ayush\\Desktop\\Projects\\BTCMarket\\BtcMarket\\BtcMarket\\BtcMarket.csproj": {
+    "C:\\Users\\ayush\\Desktop\\Projects\\DayTrader\\DayTrader.Service\\BtcMarket\\BtcMarket.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ayush\\Desktop\\Projects\\BTCMarket\\BtcMarket\\BtcMarket\\BtcMarket.csproj",
+        "projectUniqueName": "C:\\Users\\ayush\\Desktop\\Projects\\DayTrader\\DayTrader.Service\\BtcMarket\\BtcMarket.csproj",
         "projectName": "BtcMarket",
-        "projectPath": "C:\\Users\\ayush\\Desktop\\Projects\\BTCMarket\\BtcMarket\\BtcMarket\\BtcMarket.csproj",
+        "projectPath": "C:\\Users\\ayush\\Desktop\\Projects\\DayTrader\\DayTrader.Service\\BtcMarket\\BtcMarket.csproj",
         "packagesPath": "C:\\Users\\ayush\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ayush\\Desktop\\Projects\\BTCMarket\\BtcMarket\\BtcMarket\\obj\\",
+        "outputPath": "C:\\Users\\ayush\\Desktop\\Projects\\DayTrader\\DayTrader.Service\\BtcMarket\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
