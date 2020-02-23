@@ -15,6 +15,8 @@ namespace BtcMarket
 {
     public class Startup
     {
+        readonly string MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
+
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -31,6 +33,14 @@ namespace BtcMarket
             var privateApiKey = Configuration.GetSection("BtcMarketParameters:PrivateApiKey").Value;
             var publicApiKey = Configuration.GetSection("BtcMarketParameters:PublicApiKey").Value;
             services.AddScoped<IApiClient>((x) => { return new ApiClient(baseUrl, publicApiKey, privateApiKey); });
+            services.AddCors(options =>
+            {
+                options.AddPolicy(MyAllowSpecificOrigins,
+                builder =>
+                {
+                    builder.WithOrigins("http://localhost:3000");
+                });
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -40,7 +50,7 @@ namespace BtcMarket
             {
                 app.UseDeveloperExceptionPage();
             }
-
+            app.UseCors(MyAllowSpecificOrigins);
             app.UseHttpsRedirection();
 
             app.UseRouting();
