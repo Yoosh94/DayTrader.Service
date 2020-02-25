@@ -18,7 +18,7 @@ namespace BtcMarket.Controllers
         }
 
         [HttpGet]
-        [Route("ticker/{marketId}")]
+        [Route("{marketId}")]
         public async Task<string> Ticker(string marketId)
         {
             var response = await _client.Get($"/v3/markets/{marketId.ToUpper()}/ticker");
